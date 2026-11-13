@@ -1,0 +1,30 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Raw data (~27 MB): re-download with `uv run scripts/download_data.py`
+# (data/README.md, data/MANIFEST.csv and data/CHECK_REPORT.txt stay tracked)
+data/raw/
+
+# LaTeX build files (keep report.tex and report.pdf)
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
+report/*.bbl
+report/*.blg
+report/*.bcf
+report/*.run.xml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

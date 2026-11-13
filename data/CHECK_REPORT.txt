@@ -1,0 +1,78 @@
+Check report written 2026-11-11 16:30 by scripts/download_data.py
+
+[ok] noaa_gml/ch4_mm_gl.txt
+     516 months 1983-07 .. 2026-06; 1626.0..1945.5 ppb
+     note: Seasonal cycle amplitude (average - trend) is 11.4 ppb at most; use `trend` (deseasonalised) for growth rates.
+     note: The newest 5 months (2026-02 .. 2026-06) have uncertainty -9.99 (NOAA's missing-value code): they are preliminary and will be revised. Treat -9.99 as NaN.
+
+[ok] noaa_gml/ch4_annmean_gl.txt
+     42 years 1984..2025; 1644.8 -> 1936.0 ppb; matches monthly file within 0.17 ppb
+
+[ok] noaa_gml/ch4_gr_gl.txt
+     42 years 1984..2025; -4.7..17.7 ppb/yr
+     note: Stall: mean growth 2000-2006 = 0.5 ppb/yr. Largest growth: 2021 (17.7), 2020 (14.8), 1991 (14.0) ppb/yr.
+
+[ok] noaa_gml/sites_ch4
+     23 sites; records 1983-01 .. 2025-12; coordinates in site_table.csv (13 NH, 10 SH)
+     note: ch4 sites whose record ends more than a year before the newest: azr (ends 2022-03), chr (ends 2019-12), eic (ends 2019-11), gmi (ends 2023-03)
+     note: ch4 sites with more than 6 missing-month gaps: azr (11), bhd (7), chr (7), gmi (11)
+     note: 13 NH and 10 SH sites. Mountain/ice-sheet sites (>1500 m): izo, mlo, spo; they sample the free troposphere rather than the marine boundary layer.
+
+[ok] noaa_hats/HATS_global_MC.txt
+     419 global months 1990-05 .. 2025-03
+     note: Global MCF falls from 125.6 ppt (1990-05) to 0.82 ppt (2025-03). Quick check: the 2005-2020 e-folding time is 5.7 yr (total lifetime incl. ocean/stratosphere loss and small residual emissions).
+     note: Rows before 1992-05 have NH data only (SH and global columns are NaN).
+
+[ok] edgar
+     223 countries x 55 years (1970..2024), Gg CH4
+     note: Sheets in EDGAR_CH4_1970_2024.xlsx: Citations and references, IPCC 2006, IPCC 1996, TOTALS BY COUNTRY
+     note: Global anthropogenic total 205 Tg (1970) -> 333 Tg (2024); India 16.1 -> 30.5 Tg (9.2% of world).
+
+[ok] owid/owid-co2-codebook.csv
+     codebook
+
+[ok] owid/owid-co2-data.csv
+     50411 rows, 254 countries/regions, years 1750..2024
+     note: `methane` is in million tonnes CO2-equivalent (GWP100), not Tg CH4. Codebook: Measured in tonnes of carbon dioxide-equivalents over a 100-year timescale....
+     note: World methane present 1850..2024; India 1850..2024.
+
+[ok] gcp/Global_methane_budget_2023_2000_2020_v1.xlsx
+     10 sheets: Summary; Contributors and data policy; CH4_observation -fig 1; Anthropogenic emissions - fig 2; 2000-2009 BU Budget; 2010-2019 BU Budget; 2020 BU Budget; 2000-2009 TD Budget; 2010-2019 TD Budget; 2020 TD Budget
+     note: Budget tables are decadal means (2000-2009, 2010-2019) plus 2020, in Tg CH4/yr; each sheet has a free-text header block above the table (read with skiprows).
+
+[ok] climate_indicator/ghg_concentrations.csv
+     177 rows 1750, 1850..2025; 55 gases
+     note: CH4 729.2 ppb (1750), 807.6 (1850), 1936.3 (2025). There are no rows for 1751-1849.
+     note: Difference from the NOAA global annual mean over 1984-2025: -2.6..+3.1 ppb (this file blends NOAA and AGAGE after 1979, ice cores before).
+
+[ok] climate_indicator/ERF_best.csv
+     276 years 1750..2025; CH4 ERF 0.570 W/m2 in 2025
+     note: CH4 ERF here includes only the direct CH4 term. CH4's indirect effects (tropospheric O3, stratospheric H2O) are in the O3 and H2O_stratospheric columns of ERF_best_aggregates.csv.
+
+[ok] climate_indicator/ERF_best_aggregates.csv
+     276 years 1750.5..2025.5; total ERF 3.37 W/m2 at the end
+     note: Time index is mid-year (e.g. 2024.5).
+     note: Most negative total ERF -5.7 W/m2 in 1816.5 (Tambora eruption, volcanic forcing). Large negative spikes in volcanic years are real, not errors.
+
+[ok] climate_indicator/slcf_emissions.csv
+     276 years 1750..2025; CH4 emissions only from 1970
+     note: Anthropogenic + biomass-burning emissions (Tg/yr; NOx as Tg NO2). In 2025: CH4 361, NOx 120, CO 693 Tg/yr.
+     note: CH4 column is empty before 1970.
+
+[ok] climate_indicator/ghg_equivalent_emissions.csv
+     275 years 1750.5..2024.5; CH3CCl3 peak 692 Gg/yr in 1989.5
+     note: Emissions here are derived by inverting the concentration record (not inventories); units are Gg/yr of each gas. Index is mid-year.
+
+[ok] hadcrut/HadCRUT.5.2.0.0.analysis.summary_series.global.annual.csv
+     177 years 1850..2026
+     note: Anomalies are relative to 1961-1990.
+     note: The last row (2026) is a PARTIAL year (months to date). Drop it for annual work.
+
+[ok] rcmip/rcmip_ch4_nox_co_voc_mcf_emissions_world.csv
+     70 rows (7 variables x 10 scenarios), years 1750..2500; historical Emissions|CH4 2014 = 387.9 Mt CH4/yr
+     note: Historical rows end in 2014; SSP rows start in 2015. Many SSP years are only every 5-10 years (interpolate).
+
+[ok] rcmip/rcmip_ch4_mcf_concentrations_world.csv
+     20 rows (2 variables x 10 scenarios), years 1700..2500; historical Atmospheric Concentrations|CH4 2014 = 1831.5 ppb
+     note: Concentrations are MAGICC7 projections used to drive CMIP6 models.
+
