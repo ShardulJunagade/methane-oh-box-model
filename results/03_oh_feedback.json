@@ -1,0 +1,46 @@
+{
+  "k_oh": 0.08928571428571429,
+  "a": 0.31,
+  "k_other": 0.02,
+  "C_ref": 1798.89,
+  "lifetimes": {
+    "2010 (reference)": {
+      "C": 1798.89,
+      "tau_global": 9.150326797385622,
+      "tau_perturbation": 12.253829321663021,
+      "feedback_factor": 1.3391684901531729,
+      "OH_relative": 1.0
+    },
+    "2025": {
+      "C": 1936.03,
+      "tau_global": 9.326241499649571,
+      "tau_perturbation": 12.691116842067926,
+      "feedback_factor": 1.3607965054888176,
+      "OH_relative": 0.9769125005417064
+    }
+  },
+  "jacobian": {
+    "E_equilibrium_Tg": 570.871181086191,
+    "eigenvalues_per_yr": [
+      -32305861.58972519,
+      -0.07879527285695076
+    ],
+    "fast_timescale_s": 0.9769124996820264,
+    "slow_timescale_yr": 12.691116658932758,
+    "stiffness_ratio": 409997458.2025373
+  },
+  "qssa_vs_full_max_diff_ppb": 3.764314442378236e-06,
+  "pulse_efold_yr": {
+    "with OH feedback": 12.723380616462219,
+    "constant OH": 9.150326878539666
+  },
+  "threshold": {
+    "E_crit_OH_only_Tg": 1424.8120679723504,
+    "E_crit_OH_only_lowNOx_Tg": 1139.8496543778804,
+    "today_total_emission_Tg": 575.0,
+    "ratio": 2.4779340312562614,
+    "Ceq_at_today_emission_realistic": 1955.1299794155043,
+    "Ceq_at_today_emission_noFeedback": 1913.2501485442663,
+    "dCeq_dE_ppb_per_Tg_today": 4.614951578933791
+  }
+}

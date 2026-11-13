@@ -1,0 +1,37 @@
+{
+  "erf_2025": {
+    "ClimateIndicator": 0.5695850722034641,
+    "Course formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": 0.6119937125796578,
+    "Myhre 1998 (with N$_2$O overlap)": 0.5363152449042644,
+    "Etminan 2016 x AR6 adjustment": 0.5667917891756324
+  },
+  "erf_rmse_1750_2025": {
+    "Course formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": 0.015774994280591897,
+    "Myhre 1998 (with N$_2$O overlap)": 0.017053709761992195,
+    "Etminan 2016 x AR6 adjustment": 0.00223877281311974
+  },
+  "ebm_one_layer": {
+    "C_Wyr_m2K": 16.401494767194542,
+    "lambda_Wm2K": 1.7806078019110523,
+    "rmse_K": 0.12338621602737199,
+    "ECS_K": 2.207111524380661,
+    "course_L04_B": 1.3
+  },
+  "ebm_two_layer": {
+    "C_Wyr_m2K": 16.713296580989258,
+    "lambda_Wm2K": 1.254690850225827,
+    "gamma_Wm2K": 0.67,
+    "Cd_fixed": 100.0,
+    "rmse_K": 0.12120364861646706,
+    "ECS_K": 3.1322456837018096,
+    "TCR_like_K": 2.0418863629651938,
+    "gamma_fixed": true
+  },
+  "warming_2025_K": {
+    "total_model": 1.4976918045523735,
+    "observed": 1.432652257,
+    "CH4_direct": 0.27834823448967333,
+    "CH4_direct_plus_stratH2O": 0.3044089266081814,
+    "CH4_share_of_model_warming": 0.18585147734908342
+  }
+}
