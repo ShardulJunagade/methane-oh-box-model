@@ -1,12 +1,12 @@
 {
   "erf_2025": {
     "ClimateIndicator": 0.5695850722034641,
-    "Course formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": 0.6119937125796578,
+    "Square-root formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": 0.6119937125796578,
     "Myhre 1998 (with N$_2$O overlap)": 0.5363152449042644,
     "Etminan 2016 x AR6 adjustment": 0.5667917891756324
   },
   "erf_rmse_1750_2025": {
-    "Course formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": 0.015774994280591897,
+    "Square-root formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": 0.015774994280591897,
     "Myhre 1998 (with N$_2$O overlap)": 0.017053709761992195,
     "Etminan 2016 x AR6 adjustment": 0.00223877281311974
   },

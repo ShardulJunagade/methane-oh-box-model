@@ -25,7 +25,7 @@ conc = conc.reindex(np.arange(1750, 2026)).interpolate()
 erf = cm.ci_erf()
 erf.index = erf.index.astype(int)
 Mx, Nx = conc.CH4.values, conc.N2O.values
-forms = {"Course formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": M.erf_ch4_simple(Mx),
+forms = {"Square-root formula 0.036($\\sqrt{M}-\\sqrt{M_0}$)": M.erf_ch4_simple(Mx),
          "Myhre 1998 (with N$_2$O overlap)": M.erf_ch4_myhre(Mx),
          "Etminan 2016 x AR6 adjustment": M.erf_ch4_etminan(Mx, Nx)}
 ref = erf.CH4.reindex(conc.index).values
